@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e2e8e0;  
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "main    main    main"
+    "footer  footer  footer";
+}
+
+a {
+    text-decoration: none;
+    color: #e2e8e0;  
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #e2e8e0;
+    padding: 30px 20px;
+    background-color: rgb(100, 50, 155);
+    grid-area: header;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__title {
+    font-size: 120%;
+}
+
+.content__navbar {
+    display: flex;
+}
+
+.content__navbar li {
+    margin: 0 15px;
+}
+
+.content__navbar li a {
+    font-weight: bold;
+}
+
+span {
+    display: none;
+}
+
+.main{
+    background-color: rgba(0, 0, 0, 0.92);
+    grid-area: main;
+}
+
+.card {
+    background-color: #4B4B4B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.116);
+  }
+
+.card__header {
+    position: relative;
+  }
+
+.courses__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card__header img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card__header small {
+    color: rgb(100, 50, 155, 1);
+    font-weight: bold;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.main-section {
+    margin-top: 40px;  
+}
+
+.texto-form {
+    text-align: center;
+}
+
+.news {
+    max-width: 810px;  
+}
+
+.img-news {
+    display: flex;
+}
+
+.div-text {
+    line-height: 1.5;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.news-title {
+    font-size: 250%;
+}
+
+.footer {
+    background-color: rgb(100, 50, 155);
+    grid-area: footer;
+}
+
+.footer__content {
+    /* display: flex;
+    justify-content: space-between; */
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #e2e8e0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.footer__content div {
+    font-weight: bold;
+}
+
+@media (max-width: 769px) {
+    .courses__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    span {
+        display: inline-block;
+        font-size: 22px;
+    }
+    .content__navbar {
+        display: none;
+    }
+    .footer__content {
+        grid-template-columns: 1fr;        
+    }
+    .news-title {
+        font-size: 300%;
+    }
+    .img-news{
+    width: 50% 50%; 
+    }
+    .div-text {
+        font-size: 190%;
+    }
+    .sub-title {
+        font-size: 185%;
+    }
+}
