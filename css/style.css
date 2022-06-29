@@ -19,7 +19,7 @@ body {
 a {
     text-decoration: none;
     color: #e2e8e0;  
-  }
+}
 
 .container {
     max-width: 1200px;
@@ -69,11 +69,16 @@ span {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.116);
-  }
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
 
 .card__header {
     position: relative;
-  }
+}
 
 .courses__grid {
     display: grid;
