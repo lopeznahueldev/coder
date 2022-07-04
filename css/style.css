@@ -21,10 +21,10 @@ a {
     color: #e2e8e0;  
 }
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 .header {
     color: #e2e8e0;
@@ -146,13 +146,13 @@ span {
     font-weight: bold;
 }
 
-@media (max-width: 769px) {
+/* @media (max-width: 769px) {
     .courses__grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     span {
         display: inline-block;
         font-size: 22px;
@@ -174,5 +174,5 @@ span {
     }
     .sub-title {
         font-size: 185%;
-    }
-}
+    } 
+}*/ 

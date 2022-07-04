@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -26,60 +28,67 @@
     
     <main class="main">
         <section class="main-section container">
-            <div class="courses__grid">
-                <article class="card">
-                    <div class="card__header" >
-                        <small>Actualidad</small>
-                    <a href="./pages/news/USA.html"> <img src="./images/usanotguns.jpg" alt="" /></a>
-                    </div>
-                    <a href="./pages/news/USA.html"> <h3 class="card__title">Estados Unidos: senadores anunciaron un acuerdo para limitar el uso de armas de fuego</h3></a>
-                    <p class="card__description"></p>
-                </article>
-
-                <article class="card">
-                    <div class="card__header">
-                        <small>Música</small>
-                    <a href="./pages/news"> <img src="./images/ysya.jpg" alt="" /></a>
-                    </div>
-                    <a href="../pages/news"> <h3 class="card__title">El show de Ysy A el sábado causó un sismo en la Ciudad de Buenos Aires</h3></a>
-                    <p class="card__description"></p>
-                </article>
-
-                <article class="card">
-                    <div class="card__header">
-                        <small>Gaming</small>
-                    <a href="./pages/news"> <img src="./images/9zteam.jpg" alt="" /></a>
-                    </div>
-                    <a href="../pages/news"> <h3 class="card__title">9z Team hizo historia y se convirtió en el primer equipo Latinoamericano en jugar un Major</h3></a>
-                    <p class="card__description"></p>
-                </article>                
-
-                <article class="card">
-                    <div class="card__header" >
-                        <small>Actualidad</small>
-                    <a href="./pages/news/USA.html"> <img src="./images/putin.jpg" alt="" /></a>
-                    </div>
-                    <a href="./pages/news/USA.html"> <h3 class="card__title">Rusia recortó el suministro de gas a Alemania</h3></a>
-                    <p class="card__description"></p>
-                </article>                
-
-                <article class="card">
-                    <div class="card__header">
-                        <small>Música</small>
-                    <a href="./pages/news"> <img src="./images/fito.jpg" alt="" /></a>
-                    </div>
-                    <a href="../pages/news"> <h3 class="card__title">Fito agrega una quinta fecha en Buenos Aires de "El amor después del amor"</h3></a>
-                    <p class="card__description"></p>
-                </article>                
-
-                <article class="card">
-                    <div class="card__header">
-                        <small>Gaming</small>
-                    <a href="./pages/news"> <img src="./images/origins.jpg" alt="" /></a>
-                    </div>
-                    <a href="../pages/news"> <h3 class="card__title">Ya podés descargar Assassin’s Creed Origins gratis en consolas y PC</h3></a>
-                    <p class="card__description"></p>
-                </article>                
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header" >
+                            <small>Actualidad</small>
+                        <a href="./pages/news/USA.html"> <img src="./images/usanotguns.jpg" alt="" /></a>
+                        </div>
+                        <a href="./pages/news/USA.html"> <h3 class="card__title">Estados Unidos: senadores anunciaron un acuerdo para limitar el uso de armas de fuego</h3></a>
+                        <p class="card__description"></p>
+                    </article>                        
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header">
+                            <small>Música</small>
+                        <a href="./pages/news"> <img src="./images/ysya.jpg" alt="" /></a>
+                        </div>
+                        <a href="../pages/news"> <h3 class="card__title">El show de Ysy A el sábado causó un sismo en la Ciudad de Buenos Aires</h3></a>
+                        <p class="card__description"></p>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header">
+                            <small>Gaming</small>
+                        <a href="./pages/news"> <img src="./images/9zteam.jpg" alt="" /></a>
+                        </div>
+                        <a href="../pages/news"> <h3 class="card__title">9z Team hizo historia y se convirtió en el primer equipo Latinoamericano en jugar un Major</h3></a>
+                        <p class="card__description"></p>
+                    </article>
+                </div>                
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header" >
+                            <small>Actualidad</small>
+                        <a href="./pages/news/USA.html"> <img src="./images/putin.jpg" alt="" /></a>
+                        </div>
+                        <a href="./pages/news/USA.html"> <h3 class="card__title">Rusia recortó el suministro de gas a Alemania</h3></a>
+                        <p class="card__description"></p>
+                    </article>
+                </div>                
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header">
+                            <small>Música</small>
+                        <a href="./pages/news"> <img src="./images/fito.jpg" alt="" /></a>
+                        </div>
+                        <a href="../pages/news"> <h3 class="card__title">Fito agrega una quinta fecha en Buenos Aires de "El amor después del amor"</h3></a>
+                        <p class="card__description"></p>
+                    </article> 
+                </div>               
+                <div class="col-sm-12 col-md-4">
+                    <article class="card mb-4">
+                        <div class="card__header">
+                            <small>Gaming</small>
+                        <a href="./pages/news"> <img src="./images/origins.jpg" alt="" /></a>
+                        </div>
+                        <a href="../pages/news"> <h3 class="card__title">Ya podés descargar Assassin’s Creed Origins gratis en consolas y PC</h3></a>
+                        <p class="card__description"></p>
+                    </article>  
+                </div>              
             </div>
         </section>
 
