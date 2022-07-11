@@ -38,6 +38,11 @@ a {
     color: #e2e8e0; 
 }
 
+.header__content a:hover {
+    color: #0f1010;
+    transition: 0.3s;
+}
+
 /* MAIN */
 .main{
     background-color: #0f1010;
@@ -56,10 +61,6 @@ a {
     border-radius: 10px;
     box-shadow: 0 12px 15px -12px rgba(255, 255, 255, 0.116);
     transition: transform 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
 }
 
 .card__header {
@@ -87,6 +88,15 @@ a {
     border-bottom-left-radius: 10px;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a:hover {
+    color: #531077;
+    transition: 0.3s;
+}
+
 /* NEWS */
 
 .div-text {
@@ -111,6 +121,11 @@ a {
 
 .footer__content div {
     font-weight: bold;
+}
+
+.footer__content a:hover {
+    color: #0f1010;
+    transition: 0.3s;
 }
 
 /* MEDIA QUERIES */
