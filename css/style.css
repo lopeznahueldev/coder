@@ -16,59 +16,45 @@ body {
     "footer  footer  footer";
 }
 
-a {
-    text-decoration: none;
-    color: #e2e8e0;  
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: #e2e8e0;  
+}
+
+/* HEADER */
 .header {
     color: #e2e8e0;
     padding: 30px 20px;
-    background-color: rgb(100, 50, 155);
+    background-color: #531077;
     grid-area: header;
 }
 
-.header__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header a {
+    color: #e2e8e0; 
 }
 
-.content__title {
-    font-size: 120%;
-}
-
-.content__navbar {
-    display: flex;
-}
-
-.content__navbar li {
-    margin: 0 15px;
-}
-
-.content__navbar li a {
-    font-weight: bold;
-}
-
-span {
-    display: none;
-}
-
+/* MAIN */
 .main{
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: #0f1010;
     grid-area: main;
 }
 
+.main-section {
+    margin-top: 40px;
+    margin-bottom: 40px;  
+}
+
+/* TARJETAS */
 .card {
     background-color: #4B4B4B;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.116);
+    box-shadow: 0 12px 15px -12px rgba(255, 255, 255, 0.116);
     transition: transform 0.4s;
 }
 
@@ -93,7 +79,7 @@ span {
 }
 
 .card__header small {
-    color: rgb(100, 50, 155, 1);
+    color: #531077;
     font-weight: bold;
     padding: 8px;
     position: absolute;
@@ -101,39 +87,20 @@ span {
     border-bottom-left-radius: 10px;
 }
 
-.main-section {
-    margin-top: 40px;  
-}
-
-.texto-form {
-    text-align: center;
-}
-
-.news {
-    max-width: 810px;  
-}
-
-.img-news {
-    display: flex;
-}
+/* NEWS */
 
 .div-text {
     line-height: 1.5;
     font-family: 'Nuosu SIL', serif;
 }
 
-.news-title {
-    font-size: 250%;
-}
-
+/* FOOTER */
 .footer {
-    background-color: rgb(100, 50, 155);
+    background-color: #531077;
     grid-area: footer;
 }
 
 .footer__content {
-    /* display: flex;
-    justify-content: space-between; */
     max-width: 1200px;
     margin: 0 auto;
     color: #e2e8e0;
@@ -146,6 +113,7 @@ span {
     font-weight: bold;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
     .courses__grid {
         grid-template-columns: 1fr;
@@ -153,10 +121,6 @@ span {
 }
 
 @media (max-width: 425px) {
-    span {
-        display: inline-block;
-        font-size: 22px;
-    }
     .content__navbar {
         display: none;
     }
