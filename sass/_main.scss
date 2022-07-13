@@ -1,0 +1,82 @@
+.main {
+    background-color: $colorFondo;
+    grid-area: main;
+
+    &-section {
+        margin-top: 40px;
+        margin-bottom: 40px;  
+    }
+}
+
+.courses__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* TARJETAS */
+.card {
+    background-color: $colorCards;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 15px -12px rgba(255, 255, 255, 0.116);
+    transition: transform 0.4s;
+
+    &__header {
+        position: relative;
+
+        & img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        & small {
+            color: $colorPrincipal;
+            font-weight: bold;
+            padding: 8px;
+            position: absolute;
+            right: 0;
+            border-bottom-left-radius: 10px;
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    & a:hover {
+        color: $colorPrincipal;
+        transition: 0.3s;
+    }
+}
+
+/* NEWS */
+.div-text {
+    line-height: 1.5;
+    font-family: 'Nuosu SIL', serif;
+}
+
+// MEDIA QUERIES
+@media (max-width: 1024px) {
+    .courses__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 769px) {
+    .courses__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .news-title {
+        font-size: 300%;
+    }
+    .div-text {
+        font-size: 190%;
+    }
+    .sub-title {
+        font-size: 185%;
+    }
+}

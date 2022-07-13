@@ -1,154 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #e2e8e0;  
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    list-style-type: none;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e2e8e0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: none; }
 
 body {
-    display: grid;
-    grid-template-areas: 
-    "header  header  header"
-    "main    main    main"
-    "footer  footer  footer";
-}
+  display: grid;
+  grid-template-areas: "header  header  header" "main    main    main" "footer  footer  footer"; }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+  max-width: 1200px;
+  margin: 0 auto; }
 
 a {
-    text-decoration: none;
-    color: #e2e8e0;  
-}
+  text-decoration: none;
+  color: #e2e8e0; }
 
-/* HEADER */
 .header {
-    color: #e2e8e0;
-    padding: 30px 20px;
-    background-color: #531077;
-    grid-area: header;
-}
-
-.header a {
-    color: #e2e8e0; 
-}
-
-.header__content a:hover {
+  color: #e2e8e0;
+  padding: 30px 20px;
+  background-color: #531077;
+  grid-area: header; }
+  .header a {
+    color: #e2e8e0; }
+  .header__content a:hover {
     color: #0f1010;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
 
-/* MAIN */
-.main{
-    background-color: #0f1010;
-    grid-area: main;
-}
-
-.main-section {
+.main {
+  background-color: #0f1010;
+  grid-area: main; }
+  .main-section {
     margin-top: 40px;
-    margin-bottom: 40px;  
-}
+    margin-bottom: 40px; }
+
+.courses__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; }
 
 /* TARJETAS */
 .card {
-    background-color: #4B4B4B;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 12px 15px -12px rgba(255, 255, 255, 0.116);
-    transition: transform 0.4s;
-}
-
-.card__header {
-    position: relative;
-}
-
-.courses__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-
-.card__header img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.card__header small {
+  background-color: #4B4B4B;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 12px 15px -12px rgba(255, 255, 255, 0.116);
+  transition: transform 0.4s; }
+  .card__header {
+    position: relative; }
+    .card__header img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px; }
+    .card__header small {
+      color: #531077;
+      font-weight: bold;
+      padding: 8px;
+      position: absolute;
+      right: 0;
+      border-bottom-left-radius: 10px; }
+  .card:hover {
+    transform: translateY(-10px); }
+  .card a:hover {
     color: #531077;
-    font-weight: bold;
-    padding: 8px;
-    position: absolute;
-    right: 0;
-    border-bottom-left-radius: 10px;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card a:hover {
-    color: #531077;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
 
 /* NEWS */
-
 .div-text {
-    line-height: 1.5;
-    font-family: 'Nuosu SIL', serif;
-}
+  line-height: 1.5;
+  font-family: 'Nuosu SIL', serif; }
 
-/* FOOTER */
+@media (max-width: 1024px) {
+  .courses__grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 769px) {
+  .courses__grid {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 425px) {
+  .news-title {
+    font-size: 300%; }
+  .div-text {
+    font-size: 190%; }
+  .sub-title {
+    font-size: 185%; } }
+
 .footer {
-    background-color: #531077;
-    grid-area: footer;
-}
-
-.footer__content {
+  background-color: #531077;
+  grid-area: footer; }
+  .footer__content {
     max-width: 1200px;
     margin: 0 auto;
     color: #e2e8e0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-}
-
-.footer__content div {
-    font-weight: bold;
-}
-
-.footer__content a:hover {
-    color: #0f1010;
-    transition: 0.3s;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 769px) {
-    .courses__grid {
-        grid-template-columns: 1fr;
-    }
-}
+    gap: 35px; }
+    .footer__content a:hover {
+      color: #0f1010;
+      transition: 0.3s; }
 
 @media (max-width: 425px) {
-    .content__navbar {
-        display: none;
-    }
-    .footer__content {
-        grid-template-columns: 1fr;        
-    }
-    .news-title {
-        font-size: 300%;
-    }
-    .div-text {
-        font-size: 190%;
-    }
-    .sub-title {
-        font-size: 185%;
-    }
-}
+  .footer__content {
+    grid-template-columns: 1fr; } }

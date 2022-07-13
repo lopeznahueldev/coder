@@ -1,0 +1,25 @@
+.footer {
+    background-color: $colorPrincipal;
+    grid-area: footer;
+
+    &__content {
+        max-width: 1200px;
+        margin: 0 auto;
+        color: $colorFuentes;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+
+        & a:hover {
+            color: $colorFondo;
+            transition: 0.3s;
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media (max-width: 425px) {
+    .footer__content {
+        grid-template-columns: 1fr;        
+    }
+}

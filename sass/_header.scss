@@ -1,0 +1,15 @@
+.header {
+    color: $colorFuentes;
+    padding: 30px 20px;
+    background-color: $colorPrincipal;
+    grid-area: header;
+
+    & a {
+        color: $colorFuentes;
+    }
+
+    &__content a:hover {
+        color: $colorFondo;
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "noticiar-nahuel_lopez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xnahuel/coder.git"
+  },
+  "author": "Nahuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xnahuel/coder/issues"
+  },
+  "homepage": "https://github.com/xnahuel/coder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

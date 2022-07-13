@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $colorFuentes;  
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "main    main    main"
+    "footer  footer  footer";
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $colorFuentes;  
+}
