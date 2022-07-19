@@ -36,11 +36,10 @@ a {
   .main-section {
     margin-top: 40px;
     margin-bottom: 40px; }
-
-.courses__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px; }
+    .main-section__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px; }
 
 /* TARJETAS */
 .card {
@@ -74,11 +73,11 @@ a {
   font-family: 'Nuosu SIL', serif; }
 
 @media (max-width: 1024px) {
-  .courses__grid {
+  .main-section__grid {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 769px) {
-  .courses__grid {
+  .main-section__grid {
     grid-template-columns: 1fr; } }
 
 @media (max-width: 425px) {
