@@ -1,15 +1,13 @@
 .header {
-    color: $colorFuentes;
+    @include font($colorPrincipal, header, $colorFuentes,)
     padding: 30px 20px;
-    background-color: $colorPrincipal;
-    grid-area: header;
 
     & a {
-        color: $colorFuentes;
+        color: map-get($color, font);
     }
 
     &__content a:hover {
-        color: $colorFondo;
+        color: map-get($color, background);
         transition: 0.3s;
     }
 }

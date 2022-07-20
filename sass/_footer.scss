@@ -1,10 +1,8 @@
 .footer {
-    background-color: $colorPrincipal;
-    grid-area: footer;
+    @include font($colorPrincipal, footer, $colorFuentes,)
 
     &__content {
-        max-width: 1200px;
-        margin: 0 auto;
+        @extend .container;
         color: $colorFuentes;
         display: grid;
         grid-template-columns: repeat(3, 1fr);

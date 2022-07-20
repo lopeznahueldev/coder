@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-areas: "header  header  header" "main    main    main" "footer  footer  footer"; }
 
-.container {
+.container, .footer__content {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -20,10 +20,10 @@ a {
   color: #e2e8e0; }
 
 .header {
-  color: #e2e8e0;
-  padding: 30px 20px;
   background-color: #531077;
-  grid-area: header; }
+  grid-area: header;
+  color: #e2e8e0;
+  padding: 30px 20px; }
   .header a {
     color: #e2e8e0; }
   .header__content a:hover {
@@ -72,6 +72,15 @@ a {
   line-height: 1.5;
   font-family: 'Nuosu SIL', serif; }
 
+/* CONTACTO */
+.contact {
+  display: grid;
+  justify-content: center; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
 @media (max-width: 1024px) {
   .main-section__grid {
     grid-template-columns: repeat(2, 1fr); } }
@@ -90,10 +99,9 @@ a {
 
 .footer {
   background-color: #531077;
-  grid-area: footer; }
+  grid-area: footer;
+  color: #e2e8e0; }
   .footer__content {
-    max-width: 1200px;
-    margin: 0 auto;
     color: #e2e8e0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

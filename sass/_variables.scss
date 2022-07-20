@@ -1,4 +1,25 @@
+//COLORES
 $colorPrincipal: #531077;
 $colorFondo: #0f1010;
 $colorCards: #4B4B4B;
 $colorFuentes: #e2e8e0;
+
+//TAMAÑO MEDIA QUERIES
+$desktop: 1024px;
+$tablet: 769px;
+$mobile: 425px;
+
+//MIXINS
+@mixin font($backcolor: $colorFondo, $gridarea: footer, $color: $colorFuentes,) {
+    background-color: $backcolor;
+    grid-area: $gridarea;
+    color: $color;
+}
+
+//MAP
+$color: (
+    primary: #531077,
+    secondary: #4B4B4B,
+    font: #e2e8e0,
+    background: #0f1010,
+)

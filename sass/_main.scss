@@ -56,20 +56,31 @@
     font-family: 'Nuosu SIL', serif;
 }
 
+/* CONTACTO */
+.contact {
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 // MEDIA QUERIES
-@media (max-width: 1024px) {
+@media (max-width: $desktop) {
     .main-section__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: $tablet) {
     .main-section__grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mobile) {
     .news-title {
         font-size: 300%;
     }
