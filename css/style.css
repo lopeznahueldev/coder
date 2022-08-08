@@ -72,6 +72,11 @@ a {
   line-height: 1.5;
   font-family: 'Nuosu SIL', serif; }
 
+.news {
+  position: relative; }
+  .news img {
+    width: 100%; }
+
 /* CONTACTO */
 .contact {
   display: grid;
@@ -80,6 +85,8 @@ a {
 form {
   display: flex;
   flex-direction: column; }
+  form input, form textarea, form button {
+    background-color: #4B4B4B; }
 
 @media (max-width: 1024px) {
   .main-section__grid {
@@ -91,11 +98,11 @@ form {
 
 @media (max-width: 425px) {
   .news-title {
-    font-size: 300%; }
+    font-size: 250%; }
   .div-text {
-    font-size: 190%; }
+    font-size: 170%; }
   .sub-title {
-    font-size: 185%; } }
+    font-size: 165%; } }
 
 .footer {
   background-color: #531077;

@@ -55,6 +55,12 @@
     line-height: 1.5;
     font-family: 'Nuosu SIL', serif;
 }
+.news {
+    position: relative;
+    & img {
+        width: 100%;
+    }
+}
 
 /* CONTACTO */
 .contact {
@@ -65,6 +71,9 @@
 form {
     display: flex;
     flex-direction: column;
+    input, textarea, button{
+    background-color: $colorCards;
+    }
 }
 
 // MEDIA QUERIES
@@ -82,12 +91,12 @@ form {
 
 @media (max-width: $mobile) {
     .news-title {
-        font-size: 300%;
+        font-size: 250%;
     }
     .div-text {
-        font-size: 190%;
+        font-size: 170%;
     }
     .sub-title {
-        font-size: 185%;
+        font-size: 165%;
     }
 }
