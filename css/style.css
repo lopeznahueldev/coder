@@ -70,12 +70,15 @@ a {
 /* NEWS */
 .div-text {
   line-height: 1.5;
-  font-family: 'Nuosu SIL', serif; }
+  font-family: 'Nuosu SIL', serif;
+  font-size: 120%; }
 
 .news {
   position: relative; }
   .news img {
     width: 100%; }
+  .news-title {
+    font-weight: bolder; }
 
 /* CONTACTO */
 .contact {

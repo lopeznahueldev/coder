@@ -54,11 +54,15 @@
 .div-text {
     line-height: 1.5;
     font-family: 'Nuosu SIL', serif;
+    font-size: 120%;
 }
 .news {
     position: relative;
     & img {
         width: 100%;
+    }
+    &-title {
+        font-weight: bolder;
     }
 }
 
