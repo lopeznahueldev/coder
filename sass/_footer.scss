@@ -68,7 +68,19 @@
 
 // MEDIA QUERIES
 @media (max-width: 425px) {
-    .footer__content {
-        grid-template-columns: 1fr;        
+    .footer {
+        &__content {
+            grid-template-columns: 1fr;        
+        }
+        &_actualidad__content {
+            grid-template-columns: 1fr;
+        }
+        &_music__content {
+            grid-template-columns: 1fr;
+        }
+        &_gaming__content {
+            grid-template-columns: 1fr;
+        }
+
     }
 }

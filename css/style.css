@@ -196,4 +196,10 @@ form {
 
 @media (max-width: 425px) {
   .footer__content {
+    grid-template-columns: 1fr; }
+  .footer_actualidad__content {
+    grid-template-columns: 1fr; }
+  .footer_music__content {
+    grid-template-columns: 1fr; }
+  .footer_gaming__content {
     grid-template-columns: 1fr; } }
