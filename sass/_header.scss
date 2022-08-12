@@ -1,5 +1,5 @@
 .header {
-    @include font($colorPrincipal, header, $colorFuentes,)
+    @include font($colorPrincipal, header, $colorFuentes,);
     padding: 30px 20px;
 
     & a {
@@ -12,7 +12,7 @@
     }
 
     &_actualidad {
-        @include font($colorActualidad, header, $colorFuentes,)
+        @include font($colorActualidad, header, $colorFuentes,);
         padding: 30px 20px;
 
         & a {
@@ -26,7 +26,7 @@
     }
 
     &_music {
-        @include font($colorMusic, header, $colorFuentes,)
+        @include font($colorMusic, header, $colorFuentes,);
         padding: 30px 20px;
 
         & a {
@@ -40,7 +40,7 @@
     }
 
     &_gaming {
-        @include font($colorGaming, header, $colorFuentes,)
+        @include font($colorGaming, header, $colorFuentes,);
         padding: 30px 20px;
 
         & a {

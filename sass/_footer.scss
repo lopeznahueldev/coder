@@ -1,5 +1,5 @@
 .footer {
-    @include font($colorPrincipal, footer, $colorFuentes,)
+    @include font($colorPrincipal, footer, $colorFuentes,);
 
     &__content {
         @extend .container;
@@ -15,7 +15,7 @@
     }
 
     &_actualidad {
-        @include font($colorActualidad, footer, $colorFuentes,)
+        @include font($colorActualidad, footer, $colorFuentes,);
     
         &__content {
             @extend .container;
@@ -32,7 +32,7 @@
     }
 
     &_music {
-        @include font($colorMusic, footer, $colorFuentes,)
+        @include font($colorMusic, footer, $colorFuentes,);
     
         &__content {
             @extend .container;
@@ -49,7 +49,7 @@
     }
 
     &_gaming {
-        @include font($colorGaming, footer, $colorFuentes,)
+        @include font($colorGaming, footer, $colorFuentes,);
     
         &__content {
             @extend .container;
