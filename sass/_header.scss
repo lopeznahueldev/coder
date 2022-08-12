@@ -10,4 +10,46 @@
         color: map-get($color, background);
         transition: 0.3s;
     }
+
+    &_actualidad {
+        @include font($colorActualidad, header, $colorFuentes,)
+        padding: 30px 20px;
+
+        & a {
+            color: map-get($color, font);
+        }
+    
+        &__content a:hover {
+            color: map-get($color, background);
+            transition: 0.3s;
+        }
+    }
+
+    &_music {
+        @include font($colorMusic, header, $colorFuentes,)
+        padding: 30px 20px;
+
+        & a {
+            color: map-get($color, font);
+        }
+    
+        &__content a:hover {
+            color: map-get($color, background);
+            transition: 0.3s;
+        }
+    }
+
+    &_gaming {
+        @include font($colorGaming, header, $colorFuentes,)
+        padding: 30px 20px;
+
+        & a {
+            color: map-get($color, font);
+        }
+    
+        &__content a:hover {
+            color: map-get($color, background);
+            transition: 0.3s;
+        }
+    }
 }

@@ -13,6 +13,57 @@
             transition: 0.3s;
         }
     }
+
+    &_actualidad {
+        @include font($colorActualidad, footer, $colorFuentes,)
+    
+        &__content {
+            @extend .container;
+            color: $colorFuentes;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+    
+            & a:hover {
+                color: $colorFondo;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &_music {
+        @include font($colorMusic, footer, $colorFuentes,)
+    
+        &__content {
+            @extend .container;
+            color: $colorFuentes;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+    
+            & a:hover {
+                color: $colorFondo;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &_gaming {
+        @include font($colorGaming, footer, $colorFuentes,)
+    
+        &__content {
+            @extend .container;
+            color: $colorFuentes;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+    
+            & a:hover {
+                color: $colorFondo;
+                transition: 0.3s;
+            }
+        }
+    }
 }
 
 // MEDIA QUERIES

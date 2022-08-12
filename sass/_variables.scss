@@ -3,10 +3,14 @@ $colorPrincipal: #531077;
 $colorFondo: #0f1010;
 $colorCards: #4B4B4B;
 $colorFuentes: #e2e8e0;
+$colorActualidad: #9E4D49;
+$colorMusic:#7780ED;
+$colorGaming: #36994A;
+
 
 //TAMAÑO MEDIA QUERIES
 $desktop: 1024px;
-$tablet: 769px;
+$tablet: 767px;
 $mobile: 425px;
 
 //MIXINS
@@ -14,6 +18,14 @@ $mobile: 425px;
     background-color: $backcolor;
     grid-area: $gridarea;
     color: $color;
+}
+
+@mixin small($fontwight: bold, $padding: 8px, $position: absolute, $right: 0, $borderblr: 10px,) {
+    font-weight: $fontwight;
+    padding: $padding;
+    position: $position;
+    right: $right;
+    border-bottom-left-radius: $borderblr;
 }
 
 //MAP

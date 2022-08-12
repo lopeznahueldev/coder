@@ -32,12 +32,7 @@
         }
 
         & small {
-            color: $colorPrincipal;
-            font-weight: bold;
-            padding: 8px;
-            position: absolute;
-            right: 0;
-            border-bottom-left-radius: 10px;
+            @include small(bold, 8px, absolute, 0, 10px,)
         }
     }
     &:hover {
@@ -47,6 +42,18 @@
     & a:hover {
         color: $colorPrincipal;
         transition: 0.3s;
+    }
+}
+
+.small {
+    &_actualidad {
+        color: $colorActualidad;
+    }
+    &_music {
+        color: $colorMusic;
+    }
+    &_gaming {
+        color: $colorGaming;
     }
 }
 

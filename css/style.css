@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-areas: "header  header  header" "main    main    main" "footer  footer  footer"; }
 
-.container, .footer__content {
+.container, .footer__content, .footer_actualidad__content, .footer_music__content, .footer_gaming__content {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -29,6 +29,36 @@ a {
   .header__content a:hover {
     color: #0f1010;
     transition: 0.3s; }
+  .header_actualidad {
+    background-color: #9E4D49;
+    grid-area: header;
+    color: #e2e8e0;
+    padding: 30px 20px; }
+    .header_actualidad a {
+      color: #e2e8e0; }
+    .header_actualidad__content a:hover {
+      color: #0f1010;
+      transition: 0.3s; }
+  .header_music {
+    background-color: #7780ED;
+    grid-area: header;
+    color: #e2e8e0;
+    padding: 30px 20px; }
+    .header_music a {
+      color: #e2e8e0; }
+    .header_music__content a:hover {
+      color: #0f1010;
+      transition: 0.3s; }
+  .header_gaming {
+    background-color: #36994A;
+    grid-area: header;
+    color: #e2e8e0;
+    padding: 30px 20px; }
+    .header_gaming a {
+      color: #e2e8e0; }
+    .header_gaming__content a:hover {
+      color: #0f1010;
+      transition: 0.3s; }
 
 .main {
   background-color: #0f1010;
@@ -55,7 +85,6 @@ a {
       border-radius: 8px;
       margin-bottom: 15px; }
     .card__header small {
-      color: #531077;
       font-weight: bold;
       padding: 8px;
       position: absolute;
@@ -66,6 +95,15 @@ a {
   .card a:hover {
     color: #531077;
     transition: 0.3s; }
+
+.small_actualidad {
+  color: #9E4D49; }
+
+.small_music {
+  color: #7780ED; }
+
+.small_gaming {
+  color: #36994A; }
 
 /* NEWS */
 .div-text {
@@ -95,7 +133,7 @@ form {
   .main-section__grid {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .main-section__grid {
     grid-template-columns: 1fr; } }
 
@@ -119,6 +157,42 @@ form {
     .footer__content a:hover {
       color: #0f1010;
       transition: 0.3s; }
+  .footer_actualidad {
+    background-color: #9E4D49;
+    grid-area: footer;
+    color: #e2e8e0; }
+    .footer_actualidad__content {
+      color: #e2e8e0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px; }
+      .footer_actualidad__content a:hover {
+        color: #0f1010;
+        transition: 0.3s; }
+  .footer_music {
+    background-color: #7780ED;
+    grid-area: footer;
+    color: #e2e8e0; }
+    .footer_music__content {
+      color: #e2e8e0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px; }
+      .footer_music__content a:hover {
+        color: #0f1010;
+        transition: 0.3s; }
+  .footer_gaming {
+    background-color: #36994A;
+    grid-area: footer;
+    color: #e2e8e0; }
+    .footer_gaming__content {
+      color: #e2e8e0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px; }
+      .footer_gaming__content a:hover {
+        color: #0f1010;
+        transition: 0.3s; }
 
 @media (max-width: 425px) {
   .footer__content {
