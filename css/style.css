@@ -9,7 +9,8 @@
 
 body {
   display: grid;
-  grid-template-areas: "header  header  header" "main    main    main" "footer  footer  footer"; }
+  grid-template-areas: "header  header  header" "main    main    main" "footer  footer  footer";
+  min-height: 100vh; }
 
 .container, .footer__content, .footer_actualidad__content, .footer_music__content, .footer_gaming__content {
   max-width: 1200px;
